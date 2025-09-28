@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CSC2051_VR_Project_v2.sln"
+    "dotnet.defaultSolution": "CSC2051_VR_Project_v3.sln"
 }

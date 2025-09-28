@@ -6094,7 +6094,7 @@ PrefabInstance:
     - target: {fileID: 3978375355822033550, guid: f7a65282a054cc846acdcfc67d1fcb9b,
         type: 3}
       propertyPath: m_Name
-      value: Cabinet_Modern_Gray
+      value: Cabinet_Modern_Middle
       objectReference: {fileID: 0}
     - target: {fileID: 4358877381373497396, guid: f7a65282a054cc846acdcfc67d1fcb9b,
         type: 3}
@@ -6174,7 +6174,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3978375355822033550, guid: f7a65282a054cc846acdcfc67d1fcb9b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1454964105}
   m_SourcePrefab: {fileID: 100100000, guid: f7a65282a054cc846acdcfc67d1fcb9b, type: 3}
 --- !u!1 &1221325122
 GameObject:
@@ -8781,6 +8785,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1484141553}
   m_LocalEulerAnglesHint: {x: 100.5, y: 0, z: 0}
+--- !u!1 &1454964104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3978375355822033550, guid: f7a65282a054cc846acdcfc67d1fcb9b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1207265563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1454964105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454964104}
+  m_Material: {fileID: 13400000, guid: d08e749e7737b4743b38e21993bff362, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1466041870
 GameObject:
   m_ObjectHideFlags: 0
@@ -11026,7 +11057,7 @@ PrefabInstance:
     - target: {fileID: 3978375355822033550, guid: f7a65282a054cc846acdcfc67d1fcb9b,
         type: 3}
       propertyPath: m_Name
-      value: Cabinet_Modern_Gray (2)
+      value: Cabinet_Modern_Gray_Lefts
       objectReference: {fileID: 0}
     - target: {fileID: 4358877381373497396, guid: f7a65282a054cc846acdcfc67d1fcb9b,
         type: 3}
@@ -11381,6 +11412,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040123461}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &2045315609
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4755894532722491018, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.259
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7093
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322794593882389373, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193046370886898456, guid: fab03611883bbbb419356a47c38284cc,
+        type: 3}
+      propertyPath: m_Name
+      value: PC_Casing
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fab03611883bbbb419356a47c38284cc, type: 3}
 --- !u!1001 &2058691250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11392,7 +11496,7 @@ PrefabInstance:
     - target: {fileID: 3978375355822033550, guid: f7a65282a054cc846acdcfc67d1fcb9b,
         type: 3}
       propertyPath: m_Name
-      value: Cabinet_Modern_Gray (1)
+      value: Cabinet_Modern_Right
       objectReference: {fileID: 0}
     - target: {fileID: 4358877381373497396, guid: f7a65282a054cc846acdcfc67d1fcb9b,
         type: 3}
@@ -12390,3 +12494,4 @@ SceneRoots:
   - {fileID: 1027564237}
   - {fileID: 1432050655}
   - {fileID: 696668137}
+  - {fileID: 2045315609}
