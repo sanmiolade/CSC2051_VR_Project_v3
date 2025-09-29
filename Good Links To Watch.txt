@@ -10,3 +10,8 @@ https://www.youtube.com/watch?v=xyoswWxj_6o
 How to us Git
 -----------------
 https://www.youtube.com/watch?v=MaqVvXv6zrU
+
+
+How to copy a Game object across projects
+----------------------------------------
+https://www.youtube.com/watch?v=niaz5bxl7_c
