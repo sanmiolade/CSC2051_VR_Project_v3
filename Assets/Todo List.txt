@@ -1,0 +1,4 @@
+Todo List 
+--------------------------------
+Set the PC Casing 
+Ensure that it Socket is disabled at Start
