@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class CardSocketEventHandler : MonoBehaviour
+public class CardSocketEventHandlerB : MonoBehaviour
 {
     /*FUNCTION 
             This class allow PCI cards to be dropped in any slot and be placed perfectly.
@@ -36,7 +36,7 @@ public class CardSocketEventHandler : MonoBehaviour
 
       
         // Check if this SocketInteractor has a Card Snap Point Finds child with exact name "Card__SnapPoint"
-        cardSnapPoint = transform.Find("Card_SnapPointA")?.gameObject;  // if it does or else retur Null. The ? is a Elvis operator
+        cardSnapPoint = transform.Find("Card_SnapPointB")?.gameObject;  // if it does or else retur Null. The ? is a Elvis operator
 
         if (cardSnapPoint != null)
         {
