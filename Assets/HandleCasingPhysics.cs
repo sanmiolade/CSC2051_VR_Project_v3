@@ -19,38 +19,44 @@ public class HandleCasingPhysics : MonoBehaviour
         // Start with socket disabled
         socket.enabled = false;
         // Enable the Socket  after delay     
-        Invoke(nameof(EnableSocket), activationDelay);
+        //Invoke(nameof(EnableSocket), activationDelay);
+
+
+                    // Through code:
+            Rigidbody rb = GetComponent<Rigidbody>();
+            rb.isKinematic = true;    // Makes it unaffected by physics forces
+            rb.constraints = RigidbodyConstraints.FreezeAll; // Extra safety
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    // // Update is called once per frame
+    // void Update()
+    // {
 
-    }
+    // }
 
-    void Awake()
-    {
-        grabInteractable = GetComponent<XRGrabInteractable>();
-    }
+    // void Awake()
+    // {
+    //     grabInteractable = GetComponent<XRGrabInteractable>();
+    // }
 
-    void OnEnable()
-    {
-        grabInteractable.selectExited.AddListener(OnDropped);
-    }
+    // void OnEnable()
+    // {
+    //     grabInteractable.selectExited.AddListener(OnDropped);
+    // }
 
-    void OnDisable()
-    {
-        grabInteractable.selectExited.RemoveListener(OnDropped);
-    }
+    // void OnDisable()
+    // {
+    //     grabInteractable.selectExited.RemoveListener(OnDropped);
+    // }
 
-    void OnDropped(SelectExitEventArgs args)
-    {
+    // void OnDropped(SelectExitEventArgs args)
+    // {
 
-        //Access teh Rigidbody and bring back all its Physics
-        (GetComponent<Rigidbody>()).constraints = RigidbodyConstraints.None;  //activate all physics laws
-        Debug.Log($"{gameObject.name} is about to be dropped!");
+    //     //Access teh Rigidbody and bring back all its Physics
+    //     (GetComponent<Rigidbody>()).constraints = RigidbodyConstraints.None;  //activate all physics laws
+    //     Debug.Log($"{gameObject.name} is about to be dropped!");
 
-    }
+    // }
     
 
     //************************** Custome Private functions  *********************************
