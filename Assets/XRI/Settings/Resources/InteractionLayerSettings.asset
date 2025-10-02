@@ -16,9 +16,9 @@ MonoBehaviour:
   - Default
   - CPU
   - Hats
-  - LanCard
-  - VgaCard
   - CPU_FAN
+  - PCI_Card_Normal
+  - 
   - 
   - 
   - 
