@@ -79,7 +79,7 @@ public class CardSocketEventHandlerB : MonoBehaviour
 
       
                     // Check if this SocketInteractor has a Card Snap Point Finds child with exact name "Card__SnapPoint"
-                    cardSnapPoint = transform.Find("Card_SnapPointB")?.gameObject;  // if it does or else retur Null. The ? is a Elvis operator
+                    cardSnapPoint = transform.Find("Card_SnapPoint")?.gameObject;  // if it does or else retur Null. The ? is a Elvis operator
 
                     if (cardSnapPoint != null)
                     {
