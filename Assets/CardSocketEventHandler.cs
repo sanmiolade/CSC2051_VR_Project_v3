@@ -77,28 +77,40 @@ public class CardSocketEventHandler : MonoBehaviour
         Debug.Log($"Object {args.interactableObject.transform.name} entered socket range in HoverEntered");
 
 
-      
-                    // Check if this SocketInteractor has a Card Snap Point Finds child with exact name "Card__SnapPoint"
-                    cardSnapPoint = transform.Find("Card_SnapPoint")?.gameObject;  // if it does or else retur Null. The ? is a Elvis operator
+        if (socket.hasSelection)
+        {
+            Debug.Log("Socket already has an object attached!");
+        }
+        else
+        {
+            // Check if this SocketInteractor has a Card Snap Point Finds child with exact name "Card__SnapPoint"
+            cardSnapPoint = transform.Find("Card_SnapPoint")?.gameObject;  // if it does or else retur Null. The ? is a Elvis operator
 
-                    if (cardSnapPoint != null)
-                    {
-                        //Get Reference to the Card that was dropped.....
-                        theNetworkCard = args.interactableObject.transform.gameObject;
+                        if (cardSnapPoint != null)
+                        {
+                            //Get Reference to the Card that was dropped.....
+                            theNetworkCard = args.interactableObject.transform.gameObject;
 
-                        //Check if that Card has a Child GameObject named __SocketPlacement. This hold the exact placement info
-                        CardSoketPlacementValue = theNetworkCard.transform.Find("__Card_Socket_Placement_Position")?.gameObject;
-                        if (CardSoketPlacementValue != null)
-                        {       // if so copy that Data to the CardSnapPoint, so card can be places perfectly in slot
-                            cardSnapPoint.transform.localPosition = CardSoketPlacementValue.transform.localPosition;
-                            cardSnapPoint.transform.localRotation = CardSoketPlacementValue.transform.localRotation;
-                            cardSnapPoint.transform.localScale = CardSoketPlacementValue.transform.localScale;
+                            //Check if that Card has a Child GameObject named __SocketPlacement. This hold the exact placement info
+                            CardSoketPlacementValue = theNetworkCard.transform.Find("__Card_Socket_Placement_Position")?.gameObject;
+                            if (CardSoketPlacementValue != null)
+                            {       // if so copy that Data to the CardSnapPoint, so card can be places perfectly in slot
+                                cardSnapPoint.transform.localPosition = CardSoketPlacementValue.transform.localPosition;
+                                cardSnapPoint.transform.localRotation = CardSoketPlacementValue.transform.localRotation;
+                                cardSnapPoint.transform.localScale = CardSoketPlacementValue.transform.localScale;
+                            }
+                            else
+                            Debug.LogWarning("__SocketPlacement not found as direct child!");         
                         }
                         else
-                        Debug.LogWarning("__SocketPlacement not found as direct child!");         
-                    }
-                    else
-                        Debug.LogWarning("__SocketPlacement not found as direct child!"); 
+                            Debug.LogWarning("__SocketPlacement not found as direct child!"); 
+
+
+            
+        }
+
+
+
 
     }
 
