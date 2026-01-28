@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
+  - CPU
   - Hats
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - CPU_FAN
+  - PCI_Card_Normal
+  - MotherBoards
+  - RAM
+  - PC_cover
   - 
   - 
   - 

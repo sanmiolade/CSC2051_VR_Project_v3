@@ -1,0 +1,7 @@
+Todo List 
+--------------------------------
+Set the PC Casing 
+Ensure that it Socket is disabled at Start
+
+Ensure that the CPU fan can only be attached after the CPU is Attached 
+Ensure the  Lan and VGA cards can be placed in any of the 2 slots
